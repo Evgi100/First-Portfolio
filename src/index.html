@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Evgeny Portfolio Site</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header id="main-header" class="mt-3">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-md-5">
+                        <img src="img/DSC_5262.jpg" alt="img of person" class="img-fluid ">
+                    </div>
+                    <div class="col-lg-8 col-md-7 bg-dark">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex flex-row justify-content-around align-items-center row-hl">
+                                <div class="item-hl p-4">
+                                    <h1 class="text-white">Evgeny Shapira</h1>
+                                </div>
+                                <div class="item-hl p-4">
+                                    <a href="https://github.com/Evgi100">
+                                        <i class=" fa fa-github fa-2x text-white"></i>
+                                    </a>
+                                </div>
+                                <div class="item-hl p-4">
+                                    <a href="https://codepen.io/Eugene100/">
+                                        <i class=" fa fa-codepen fa-2x text-white"></i>
+                                    </a>
+                                </div>
+                                <div class="item-hl p-4">
+                                    <a href="https://www.linkedin.com/in/evgenyshapira/">
+                                        <i class=" fa fa-linkedin fa-2x text-white"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-black">Full Stack Web Developer</div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="d-flex flex-row justify-content-around align-items-center">
+                <div class="card card-body mt-5">
+                    <h1 class="text-muted">My latest projects</h1>
+                    <p class="lead">This portfolio site is to present the different templates for web-sites/landing pages i have built</p>
+                    <div class="row ">
+                        <div class="col-lg-4 px-1 py-3">
+                            <a class="item" href="https://organicfood-sample.netlify.com" data-toggle="lightbox">
+                                <img src="img/Screenshot.png" alt="img of project" class="projectImg ">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <p class="lead">
+                                <a class="pl-2 pt-4" href="https://organicfood-sample.netlify.com">Organicfood-food delivery business</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 px-3 py-3">
+                            <a class="item" href="https://cloudzzom.netlify.com" data-toggle="lightbox">
+                                <img src="img/cloudzzom.png" alt="img of project" class="projectImg ">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <p class="lead">
+                                <a class="pl-2 pt-4" href="https://cloudzzom.netlify.com">Cloudzzom-Cloud Computing(PaaS)</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 px-3 py-3">
+                            <a class="item" href="https://mizuxe.netlify.com" data-toggle="lightbox">
+                                <img src="img/mizuxe.png" alt="img of project" class="projectImg ">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <p class="lead">
+                                <a class="pl-2 pt-4" href="https://mizuxe.netlify.com">Mizuxe-Book/Digital Service landing page</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 px-3 py-3">
+                            <a class="item" href="https://youtours.netlify.com/" data-toggle="lightbox">
+                                <img src="img/youtours.png" alt="img of project" class="projectImg ">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <p class="lead">
+                                <a class="pl-2 pt-4" href="https://youtours.netlify.com/">Youtours-tours agency web site</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 px-3 py-3">
+                            <a class="item" href="" data-toggle="lightbox">
+                                <img src="img/nexter.png" alt="img of project" class="projectImg ">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <p class="lead">
+                                <a class="pl-2 pt-4" href="https://nexterhomes.netlify.com/">Nexter-luxury homes real estate agency landing page</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 px-3 py-3">
+                            <a class="item" href="https://labloop.netlify.com" data-toggle="lightbox">
+                                <img src="img/looplab.png" alt="img of project" class="projectImg ">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <p class="lead">
+                                <a class="pl-2 pt-4" href="https://labloop.netlify.com">LoopLab-Social Service/App Theme
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+</body>
+
+</html>`
